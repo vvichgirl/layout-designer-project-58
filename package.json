@@ -1,0 +1,23 @@
+{
+  "name": "layout-designer-project-58",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/vvichgirl/layout-designer-project-58/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vvichgirl/layout-designer-project-58/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vvichgirl/layout-designer-project-58.git"
+  },
+  "author": "Viktoriia ZUbkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvichgirl/layout-designer-project-58/issues"
+  },
+  "homepage": "https://github.com/vvichgirl/layout-designer-project-58#readme",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}
