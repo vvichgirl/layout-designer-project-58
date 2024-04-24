@@ -27,6 +27,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
  }
 
 body {
@@ -34,7 +35,7 @@ body {
   color: #2A2626;
 }
 
-section {
+.wrapper {
   width: 1110px;
   padding: 100px 0;
   margin: 0 auto;
@@ -43,6 +44,8 @@ section {
 .relative {
   position: relative;
 }
+
+/* FON, BACKGROUND, COLOR */
 
 .fon::before {
   position: absolute;
@@ -60,10 +63,6 @@ section {
   content: '';
 }
 
-.main-color {
-  color: var(--main-color);
-}
-
 .main-img {
   position: absolute;
   top: 55px;
@@ -73,15 +72,50 @@ section {
   width: auto;
 }
 
+.bg-light {
+  background-color: var(--light);
+}
+
+.text-main-color {
+  color: var(--main-color);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+/* END FON, BACKGROUND, COLOR */
+
+/* FLEX */
+
 .flex {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-30 {
   gap: 30px;
 }
 
-.flex-item {
+.flex-item-2 {
   width: 50%;
 }
+
+.flex-item-3 {
+  width: calc((100% - 60px) / 3);
+  padding: 1.5rem;
+}
+
+/* END FLEX */
 
 /* TEXT */
 
@@ -102,10 +136,6 @@ h2 {
 
 h3 {
   font-size: 34px;
-}
-
-p {
-  margin: 1rem 0;
 }
 
 .text-center {
@@ -139,27 +169,72 @@ p {
 /* END BUTTONS */
 
 /* MARGIN PADDING */
+.no-padding {
+  padding: 0;
+}
 
-.mt-225 {
-  margin-top: 225px;
+.mt-198 {
+  margin-top: 198px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 /* END MARGIN PADDING */
 
 /* what-distortions */
+
 .video-wrapper {
   min-height: 383px;
 }
 
 .video {
   position: absolute;
-  left: calc(50% - 459px);
+  left: calc(50% - 459.5px);
   bottom: -100px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /* END what-distortions */
 
-#five-distortions {
+/* navigation */
+
+#navigation {
+  padding-top: 100px;
+
   background-color: var(--main-dark);
 }
+
+.title-five {
+  font: 52px/62.4px Neucha, sans-serif;
+}
+
+.number {
+  font: 64px/70.5px Neucha, sans-serif;
+}
+
+.nav-title {
+  margin-bottom: 1rem;
+}
+
+nav > a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-dark);
+}
+
+nav > a:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+nav > a:hover h3 {
+  color: var(--white);
+}
+
+/* END navigation */
