@@ -20,21 +20,23 @@
 :root {
   --main-color: #fe8a02;
   --main-dark: #42413c;
+  --dark: #2A2626;
   --dark-transparent: #908d8b;
   --white: #fff;
+  --white-transparent: #D7CCC0;
   --light: #f5f4f0;
   --brown: #B09A81;
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
  }
 
 body {
+  margin: 0;
+
   font: normal 16px/1.6em OpenSans, sans-serif;
-  color: #2A2626;
+  color: var(--dark);
 }
 
 .wrapper {
@@ -58,12 +60,20 @@ body {
   background: 
     url("../img/background.png")
     center / cover
-    no-repeat
-    var(--light);
+    no-repeat;
   opacity: 0.1;
 
   content: '';
 }
+
+.fon-light {
+  background-color: var(--light);
+}
+
+.fon-brown {
+  background-color: var(--brown);
+}
+
 
 .main-img {
   position: absolute;
@@ -83,12 +93,33 @@ body {
   width: 100%;
 }
 
+.bg-white {
+  background-color: var(--white);
+  width: 100%;
+}
+
 .text-main-color {
   color: var(--main-color);
 }
 
 .text-white {
   color: var(--white);
+}
+
+.text-white-transparent {
+  color: var(--white-transparent);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-dark-transparent {
+  color: var(--dark-transparent);
+}
+
+.text-brown {
+  color: var(--brown);
 }
 
 /* END FON, BACKGROUND, COLOR */
@@ -135,28 +166,35 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 72px;
+  font-weight: normal;
+  color: var(--main-color);
 }
 
 h2 {
   font-size: 60px;
+  color: var(--main-color);
 }
 
 h3 {
   font-size: 34px;
+  color: var(--main-color);
 }
 
 h4 {
   font-size: 24px;
   font-weight: normal;
-  color: var(--dark-transparent);
 }
 
 h5 {
   padding: 5px 10px;
-  margin: 100px 0 20px;
+  margin: 100px 0 0;
 
   font: bold 14px/1.2em OpenSans, sans-serif;
   text-transform: uppercase;
+}
+
+p {
+  margin: 1rem 0 0;
 }
 
 .text-center {
@@ -184,7 +222,7 @@ h5 {
 
 .btn-more {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 /* END BUTTONS */
@@ -194,8 +232,8 @@ h5 {
   padding: 0;
 }
 
-.mt-198 {
-  margin-top: 198px;
+.mt-182 {
+  margin-top: 182px;
 }
 
 .mt-40 {
@@ -232,15 +270,20 @@ h5 {
 }
 
 .title-five {
+  margin: 0;
   font: 52px/62.4px Neucha, sans-serif;
 }
 
 .number {
+  margin: 0;
   font: 64px/70.5px Neucha, sans-serif;
 }
 
 .nav-title {
   margin-bottom: 1rem;
+
+  font-weight: normal;
+  color: var(--main-color);
 }
 
 nav > a {
@@ -263,7 +306,7 @@ nav > a:hover h3 {
 /* COMMON DISTORIONS STYLE */
 
 .title-distortion {
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 
   font: 60px/1.2em Neucha, sans-serif;
 }
