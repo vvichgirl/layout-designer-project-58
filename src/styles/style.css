@@ -20,8 +20,10 @@
 :root {
   --main-color: #fe8a02;
   --main-dark: #42413c;
+  --dark-transparent: #908d8b;
   --white: #fff;
   --light: #f5f4f0;
+  --brown: #B09A81;
 }
 
 * {
@@ -76,6 +78,11 @@ body {
   background-color: var(--light);
 }
 
+.bg-brown {
+  background-color: var(--brown);
+  width: 100%;
+}
+
 .text-main-color {
   color: var(--main-color);
 }
@@ -119,7 +126,7 @@ body {
 
 /* TEXT */
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   margin: 0;
 
   font-family: Neucha, sans-serif;
@@ -136,6 +143,20 @@ h2 {
 
 h3 {
   font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--dark-transparent);
+}
+
+h5 {
+  padding: 5px 10px;
+  margin: 100px 0 20px;
+
+  font: bold 14px/1.2em OpenSans, sans-serif;
+  text-transform: uppercase;
 }
 
 .text-center {
@@ -238,3 +259,22 @@ nav > a:hover h3 {
 }
 
 /* END navigation */
+
+/* COMMON DISTORIONS STYLE */
+
+.title-distortion {
+  margin-bottom: 30px;
+
+  font: 60px/1.2em Neucha, sans-serif;
+}
+
+.description-distortion {
+  font: 34px/1.2em Neucha, sans-serif;
+}
+
+.img-distortion {
+  box-shadow: 0 16px 32px 0 #00000026;
+  z-index: 100;
+}
+
+/* END COMMON DISTORIONS STYLE */
