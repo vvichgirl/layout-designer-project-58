@@ -40,7 +40,7 @@ body {
 }
 
 .wrapper {
-  width: 1110px;
+  width: 1100px;
   padding: 100px 0;
   margin: 0 auto;
 }
@@ -96,6 +96,10 @@ body {
 .bg-white {
   background-color: var(--white);
   width: 100%;
+}
+
+.bg-dark {
+  background-color: var(--main-dark);
 }
 
 .text-main-color {
@@ -286,21 +290,6 @@ p {
   color: var(--main-color);
 }
 
-nav > a {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--main-dark);
-}
-
-nav > a:hover {
-  background-color: var(--main-color);
-  color: var(--white);
-}
-
-nav > a:hover h3 {
-  color: var(--white);
-}
-
 /* END navigation */
 
 /* COMMON DISTORIONS STYLE */
@@ -321,3 +310,90 @@ nav > a:hover h3 {
 }
 
 /* END COMMON DISTORIONS STYLE */
+
+/* FOOTER */
+.subscribe {
+  padding: 55px;
+}
+
+.text-more {
+  font: 34px/1.2em Neucha, sans-serif;
+}
+
+.email-wrapper {
+  margin-top: 9px;
+}
+
+.input-email {
+  height: 50px;
+  width: calc(100% - 70px);
+  padding: 15px;
+
+  border: none;
+
+  color: #757575;
+}
+
+.submit-btn {
+  position: relative;
+  height: 50px;
+  width: 70px;
+
+  border: none;
+
+  background-color: var(--main-color);
+}
+
+.submit-btn::before {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+  width: 24px;
+  height: 24px;
+
+  background: 
+    url("../img/send.svg")
+    center / cover
+    no-repeat;
+
+  content: '';
+}
+
+.subscribe-text {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.contact {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* LINK */
+
+nav > a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-dark);
+}
+
+.subscribe-text > a {
+  color: var(--white);
+}
+
+.contact a {
+  color: #1085C5;
+}
+
+nav > a:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+nav > a:hover h3 {
+  color: var(--white);
+}
+
+/* END LINK */
