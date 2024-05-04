@@ -248,6 +248,10 @@ p {
   margin-top: 40px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -261,7 +265,7 @@ p {
 /* what-distortions */
 
 .video-wrapper {
-  min-height: 383px;
+  min-height: 370px;
 }
 
 .video {
